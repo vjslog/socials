@@ -1,0 +1,28 @@
+name = "ejay-links"
+main = "src/index.tsx"
+compatibility_date = "2024-11-01"
+compatibility_flags = ["nodejs_compat"]
+
+# Route this Worker on your subdomain. Update the zone_name to your real
+# Cloudflare zone (the root domain "ejay.bio" that's already on Cloudflare).
+[[routes]]
+pattern = "socials.ejay.bio/*"
+zone_name = "ejay.bio"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "ejay_links_db"
+database_id = "REPLACE_WITH_YOUR_D1_DATABASE_ID"
+
+# Secrets (set these with `wrangler secret put <NAME>`, never commit real values):
+#   DISCORD_CLIENT_ID
+#   DISCORD_CLIENT_SECRET
+#   DISCORD_BOT_TOKEN
+#   DISCORD_GUILD_ID
+#   SESSION_SECRET
+#
+# Plain vars (safe to keep here):
+[vars]
+DISCORD_REDIRECT_URI = "https://socials.ejay.bio/auth/callback"
+PUBLIC_BASE_URL = "https://socials.ejay.bio"
+DISCORD_INVITE_URL = "https://discord.gg/pwafWvnyDe"

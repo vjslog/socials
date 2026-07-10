@@ -1,0 +1,5 @@
+DISCORD_CLIENT_ID=your_client_id
+DISCORD_CLIENT_SECRET=your_client_secret
+DISCORD_BOT_TOKEN=your_bot_token
+DISCORD_GUILD_ID=your_server_id
+SESSION_SECRET=some_long_random_string
