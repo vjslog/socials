@@ -12,7 +12,7 @@ zone_name = "ejay.bio"
 [[d1_databases]]
 binding = "DB"
 database_name = "ejay_links_db"
-database_id = "REPLACE_WITH_YOUR_D1_DATABASE_ID"
+database_id = "a7b13709-f40d-4919-bba5-8ea226ee8e84"
 
 # Secrets (set these with `wrangler secret put <NAME>`, never commit real values):
 #   DISCORD_CLIENT_ID
